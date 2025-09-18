@@ -1,6 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <bpdy>
-    <h1> My first website</h1>
-  </bpdy>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Reyes - Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #555;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Jordan Reyes</h1>
+            <h2>Creative Software Developer</h2>
+        </center>
+
+        <section>
+            <h3>About Me</h3>
+            <p>
+                I'm a passionate developer with a love for creative coding, UI/UX design, and problem-solving.
+                With experience in full-stack development and a background in digital arts, I build things that are both functional and beautiful.
+            </p>
+        </section>
+
+        <section class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:jordan.reyes@example.com">jordan.reyes@example.com</a></p>
+            <p>Phone: +123-456-7890</p>
+        </section>
+
+        <section class="social-links">
+            <h3>Connect with Me</h3>
+            <a href="https://www.linkedin.com/in/jordanreyes" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jordanreyes" target="_blank">GitHub</a>
+            <a href="https://twitter.com/jordan_codes" target="_blank">Twitter</a>
+        </section>
+    </div>
+</body>
 </html>
