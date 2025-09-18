@@ -1,84 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Reyes - Profile Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avery Morgan - Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
+    .profile-card {
+      display: flex;
+      flex-direction: row;
+      background-color: #1e293b;
+      border-radius: 16px;
+      overflow: hidden;
+      max-width: 800px;
+      width: 90%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
 
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #555;
-        }
+    .profile-left {
+      background-color: #0f172a;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
 
-        h1, h2 {
-            margin-top: 0;
-        }
+    .profile-left img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 20px;
+    }
 
-        .social-links a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #0073e6;
-        }
+    .profile-left h1 {
+      margin: 0;
+      font-size: 24px;
+    }
 
-        .social-links a:hover {
-            text-decoration: underline;
-        }
+    .profile-left h2 {
+      margin: 5px 0 20px;
+      font-weight: 400;
+      color: #94a3b8;
+      font-size: 16px;
+    }
 
-        .contact-info {
-            margin-top: 20px;
-        }
+    .social-links a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 5px 0;
+      font-size: 15px;
+    }
 
-    </style>
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-right {
+      padding: 40px 30px;
+      flex: 1;
+    }
+
+    .profile-right h3 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+
+    .contact-info p, .about-me p {
+      margin: 10px 0;
+      color: #e2e8f0;
+    }
+
+    @media (max-width: 700px) {
+      .profile-card {
+        flex-direction: column;
+      }
+
+      .profile-left, .profile-right {
+        width: 100%;
+        text-align: center;
+      }
+
+      .profile-right {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <center>
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Jordan Reyes</h1>
-            <h2>Creative Software Developer</h2>
-        </center>
-
-        <section>
-            <h3>About Me</h3>
-            <p>
-                I'm a passionate developer with a love for creative coding, UI/UX design, and problem-solving.
-                With experience in full-stack development and a background in digital arts, I build things that are both functional and beautiful.
-            </p>
-        </section>
-
-        <section class="contact-info">
-            <h3>Contact Information</h3>
-            <p>Email: <a href="mailto:jordan.reyes@example.com">jordan.reyes@example.com</a></p>
-            <p>Phone: +123-456-7890</p>
-        </section>
-
-        <section class="social-links">
-            <h3>Connect with Me</h3>
-            <a href="https://www.linkedin.com/in/jordanreyes" target="_blank">LinkedIn</a>
-            <a href="https://github.com/jordanreyes" target="_blank">GitHub</a>
-            <a href="https://twitter.com/jordan_codes" target="_blank">Twitter</a>
-        </section>
+  <div class="profile-card">
+    <div class="profile-left">
+      <img src="https://via.placeholder.com/120" alt="Profile Picture" />
+      <h1>Avery Morgan</h1>
+      <h2>UX/UI Designer & Frontend Developer</h2>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/averymorgan" target="_blank">LinkedIn</a><br>
+        <a href="https://github.com/averymorgan" target="_blank">GitHub</a><br>
+        <a href="https://twitter.com/avery_creates" target="_blank">Twitter</a>
+      </div>
     </div>
+    <div class="profile-right">
+      <section class="about-me">
+        <h3>About Me</h3>
+        <p>
+          I'm a passionate UX/UI designer and frontend developer who loves creating intuitive, user-friendly digital experiences. I thrive on combining design aesthetics with clean, efficient code.
+        </p>
+      </section>
+
+      <section class="contact-info">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:avery.morgan@example.com" style="color:#38bdf8;">avery.morgan@example.com</a></p>
+        <p>Phone: +987-654-3210</p>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
